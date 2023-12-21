@@ -3,14 +3,20 @@ import 'package:flutter/material.dart';
 
 
 class Roundedbutton extends StatelessWidget {
-   final String txt ;
-   final Color color ;
-   final Color txtcolor;
+   final String ? txt ;
+   final Color ? color ;
+   final Color? txtcolor;
    final Function press;
    final double height;
    final double width;
 
- const Roundedbutton({super.key, required this.txt, required this.color, required this.txtcolor, required this.press, required this.height, required this.width});
+ const Roundedbutton({super.key, 
+  this.txt, 
+ this.color, 
+ this.txtcolor, 
+ required this.press, 
+ required this.height, 
+ required this.width});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +29,7 @@ class Roundedbutton extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: color,
                   borderRadius: BorderRadius.circular(15)),
-                child: Text(txt,
+                child: Text("$txt",
                 style: TextStyle(
                   color: txtcolor,
                   fontSize: 20)) ,

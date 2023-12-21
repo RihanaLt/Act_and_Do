@@ -1,11 +1,15 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:act_do/routes.dart';
-import 'package:act_do/view/screens/auth/Login_screen.dart';
-import 'package:act_do/view/screens/auth/signup_screen.dart';
-import 'package:act_do/view/screens/splash_screen.dart';
-import 'package:act_do/view/screens/home_screen.dart';
-import 'package:act_do/view/screens/onboarding_screen.dart';
+
+
+
+//import 'package:act_do/view/screens/auth/Login_screen.dart';
+//import 'package:act_do/view/screens/auth/signup_screen.dart';
+//import 'package:act_do/view/screens/splash_screen.dart';
+import 'package:act_do/view/screens/home/home_screen.dart';
+//import 'package:act_do/view/screens/home/todo_screen.dart';
+//import 'package:act_do/view/screens/onboarding_screen.dart';
 
 
 
@@ -28,7 +32,7 @@ class MyApp extends StatelessWidget {
        debugShowCheckedModeBanner: false,
 
      routes: routes,
-      home: SplashScreen(),
+      home: Homepage(),
     );
   }
 }

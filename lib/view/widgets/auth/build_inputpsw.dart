@@ -45,7 +45,7 @@ class _BuildInputPasswordState extends State<BuildInputPassword> {
                   hintText: text,
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: ColorsApp.orangecolor,)
-                  )
+                  ),
                   ),
               ),
             );

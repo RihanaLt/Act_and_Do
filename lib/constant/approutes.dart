@@ -5,4 +5,7 @@ class Approutes {
   static String loginscreen = 'loginscreen';
   static String signupscreen = 'signupscreen';
   static String homescreen = 'homescreen';
+  static String notescreen ='notescreen';
+  static String todoscreen = 'todoscreen';
+ 
 }

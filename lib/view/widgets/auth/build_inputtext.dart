@@ -5,25 +5,28 @@ import 'package:flutter/material.dart';
 
 
 class BuildInputText extends StatelessWidget {
+  final TextEditingController? cntrl ;
   final bool obscure ;
   final TextInputType? keyboardType ;
-  final Widget prefixIcon;
+  final Widget? prefixIcon;
   final Widget? suffixIcon;
-  final String hintText;
+  final String? hintText;
   
   const BuildInputText({
     super.key, 
-     this.obscure = true, 
+     this.obscure = false, 
     this.keyboardType, 
-    required this.prefixIcon, 
+    this.prefixIcon, 
      this.suffixIcon, 
-    required this.hintText});
+     this.hintText, 
+      this.cntrl});
 
   @override
   Widget build(BuildContext context) {
     return Container(
               margin: EdgeInsets.all(15),
               child: TextFormField(
+                controller: cntrl,
                 obscureText: obscure ,
                 cursorColor: ColorsApp.orangecolor,
                 keyboardType: keyboardType,
@@ -33,7 +36,8 @@ class BuildInputText extends StatelessWidget {
                   hintText: hintText,
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: ColorsApp.orangecolor,)
-                  )
+                  ),
+                 
                   ),
               ),
             );
